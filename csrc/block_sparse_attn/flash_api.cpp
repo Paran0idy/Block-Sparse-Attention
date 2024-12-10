@@ -1441,7 +1441,7 @@ mha_fwd_kvcache(at::Tensor &q,                 // batch_size x seqlen_q x num_he
 }
 
 // add by JXGuo
-const int SPARSE_SIZE = 128;
+const int SPARSE_SIZE = 64;
 
 std::vector<at::Tensor>
 mha_fwd_block(const at::Tensor &q,         

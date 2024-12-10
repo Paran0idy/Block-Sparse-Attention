@@ -399,7 +399,7 @@ def block_sparse_attn_func(
     return func.apply(
                 q, k, v,
                 cu_seqlens_q, cu_seqlens_k,
-                128, 128,
+                64, 64,
                 head_mask_type,
                 streaming_info,
                 base_blockmask,

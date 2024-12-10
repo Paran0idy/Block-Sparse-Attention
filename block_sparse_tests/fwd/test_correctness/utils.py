@@ -226,7 +226,7 @@ def generate_streaming_mask(max_seqlen_q, max_seqlen_k, batch_size, num_heads,cu
     assert len(streaming_info) == 2 * num_heads
     assert len(cu_q_len_list) == batch_size + 1
     assert len(cu_k_len_list) == batch_size + 1
-    assert round_base == m_block_dim == n_block_dim == 128
+    assert round_base == m_block_dim == n_block_dim == 64
     def round_to_multiple(x, base):
         return ((x + base - 1) // base) * base
     
